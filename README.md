@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://www.opensaas.online/images/osticket-logo-img.png" height="35%" width="35%"/>
+<img src="https://www.clarusco.com/wp-content/uploads/active-directory-logo.png" height="35% width="35%"/>
 </p>
 
 <h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
