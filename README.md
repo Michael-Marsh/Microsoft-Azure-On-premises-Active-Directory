@@ -66,11 +66,11 @@ At Server Roles, check "Active Directory Domain Services."
 Ignore how the picture below already says "Installed"
 Select Add Features > select Next
 Complete the installation
-<img src="Screenshot (34).png" height="50%" width="50%" alt="Screenshot (34)"/>
+<img src="Screenshot (34).png" height="30%" width="30%" alt="Screenshot (34)"/>
 
 At the top right of the Server Manager Dashboard, click on the flag
 Select "Promote This Server to a Domain Controller"
-<img src="Screenshot (35).png" height="80%" width="80%" alt="Screenshot (35)"/>
+<img src="Screenshot (35).png" height="50%" width="50%" alt="Screenshot (35)"/>
 
 Select "Add a New Forest"
 Root domain name: mydomain.com
@@ -78,18 +78,18 @@ Select Next
 Create a password
 Select Next and follow the prompts
 Select Install to complete the installation
-<img src="Screenshot (36).png" height="80%" width="80%" alt="Screenshot (36)"/>
+<img src="Screenshot (36).png" height="50%" width="50%" alt="Screenshot (36)"/>
 
 DC-1 will automatically restart
 Log back into DC-1 as user: mydomain.com\labuser
-<img src="Screenshot (37).png" height="80%" width="80%" alt="Screenshot (37)"/>
+<img src="Screenshot (37).png" height="50%" width="50%" alt="Screenshot (37)"/>
 
 <h3>Step 4: Create an Admin and Normal User Account in Active Directory</h3>
 
 On DC-1, open Server Manager
 Click Tools at the top-right of the screen
 Select Active Directory Users and Computers
-<img src="Screenshot (38).png" height="80%" width="80%" alt="Screenshot (38)"/>
+<img src="Screenshot (38).png" height="50%" width="50%" alt="Screenshot (38)"/>
 
 Right-click mydomain.com > New > Select Oranizational Unit (OU)
 Create two OUs
@@ -115,8 +115,8 @@ Click the tab named "Member of" > select Add
 Type in the names of your domain administrators
 Select "Check Names" > OK > Apply
 Log out of DC-1 as "labuser" and log back in as “mydomain.com\jane_admin”
-<img src="Screenshot (42).png" height="80%" width="80%" alt="Screenshot (42)"/>
-<img src="Screenshot (43).png" height="80%" width="80%" alt="Screenshot (43)"/>
+<img src="Screenshot (42).png" height="50%" width="50%" alt="Screenshot (42)"/>
+<img src="Screenshot (43).png" height="50%" width="50%" alt="Screenshot (43)"/>
 
 <h3>Step 5: Join Client-1 to your domain (mydomain.com)</h3>
 Go back to the Azure portal
@@ -147,7 +147,7 @@ On the right-hand side of the screen, select Remote Desktop
 Under User Accounts, click "Select Users That Can Remotely Access This PC > select Add
 Type in the name of your domain users
 Select "Check Names" > OK > OK
-<img src="Screenshot (3).png" height="80%" width="80%" alt="Screenshot (3)"/>
+<img src="Screenshot (55).png" height="50%" width="50%" alt="Screenshot (55)"/>
 
 <h3>Step 7: Create as many additional users as you would like and attempt to log into Client-1 with one of the users' profiles</h3>
 
