@@ -21,8 +21,24 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Deployment and Configuration Steps</h2>
 
-In this lab we will create two VMs in the same VNET. One will be a Domain Controller, the other will be a Client machine. We will change the DC to a static IP because its offering Active Directory services to the client machine. Client machine will be joined to the domain. We will control the DNS settings on the client machine, the client machine will use the DC as its DNS server.
+<h3>Step 1: Setup Resources in Azure</h3>
+
+Create two virtual machines. The first virtual machine will be the Domain Controller
+
+Name: DC-1
+Availabiltiy Zone: No Infrastructure Redundancy Required
+Image: Windows Server 2025
+Size: Standard_E2s_v3 - 2 vcpus, 16 GiB memory
+
+The second virtual machine will be the Client.
+
+Name: Client-1
+Availability Zone: No Infrastructure Redundancy Required
+Image: Windows 10-22H2
+Size: Standard_E2s_v3 - 2 vcpus, 16 GiB memory
 <img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<h3>Step 2: Ensure Connectivity Between the Client and Domain Controller</h3>
 
 DC-1 has to have a static Private IP Address. Client one will connect to DC-1 to ensure connectivity we will try to ping DC-1 from Client-1. At first the ping will not work correctly. We have to enable ICMPv4 on the firewall on DC-1. Now we can ping DC-1 successfully from Client-1.
 <img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
