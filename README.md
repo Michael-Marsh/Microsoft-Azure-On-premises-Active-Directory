@@ -158,7 +158,7 @@ Right-click on Powershell_ise and open it as an administrator <br/>
 <img src="Screenshot (49).png" height="80%" width="80%" alt="Screenshot (49)"/>
 
 At the top-left of the screen select New Script and paste the contents of the following script into it
-You can find the script here
+You can find the script <a href="https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1">here</a>.
 Click the green arrow button near the top-middle of the screen
 This will run the script
 Once the users have been created, go back to Active Directory Users and Computers > mydomain.com > _EMPLOYEES - You will see all the accounts that were created
